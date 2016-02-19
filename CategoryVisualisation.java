@@ -12,9 +12,8 @@ import java.util.LinkedList;
  */
 public class CategoryVisualisation {
 
-    static String key = "NpYXLdlA5PuGiYNkL6Fz", secret = "VRItr8si94IG7QB2NDrF", endpoint = "https://api.webshrinker.com/categories/v2/";
+    static String key = "", secret = "", endpoint = "https://api.webshrinker.com/categories/v2/";
     static final String[] tableColumns = new String[]{"Domain", "Global Rank", "TLD Rank", "Ref IPs", "Ref Subnets"};
-    static JSONParser parser = new JSONParser();
     static Base64.Encoder encoder = Base64.getEncoder();
     // Maps categories to maps of domains to sites
     static HashMap<String, HashMap<String, LinkedList<Site>>> categoryMap = new HashMap<>();
