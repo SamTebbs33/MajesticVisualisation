@@ -63,7 +63,7 @@ public class CategoryVisualisation {
         frame.show();
     }
 
-    public static Site getSite(String[] fields) throws IOException, ParseException {
+    public static Site getSite(String[] fields) {
         String domain = fields[2];
         // The below code fetches the site's categories from the API, but is now unused as the categories are saved in the majestic_10000.csv file due to API request limits
        /* System.out.println(domain);
