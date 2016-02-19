@@ -1,6 +1,3 @@
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.io.BufferedReader;
@@ -36,6 +33,9 @@ public class CategoryVisualisation {
                 addSiteToCategory(site, category);
             }
         }
+        // Print each category
+        System.out.println("Categories:");
+        for(String category : categoryMap.keySet()) System.out.println(category);
         launchGUI();
     }
 
@@ -66,7 +66,7 @@ public class CategoryVisualisation {
 
     public static Site getSite(String[] fields) throws IOException, ParseException {
         String domain = fields[2];
-        // The below code fetches the site'd categories from the API, but is now unused as the categories are saved in the majestic_10000.csv file due to API request limits
+        // The below code fetches the site's categories from the API, but is now unused as the categories are saved in the majestic_10000.csv file due to API request limits
        /* System.out.println(domain);
         URL url = new URL(String.format("%s%s", endpoint, encoder.encodeToString(("http://www." + domain).getBytes())));
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
