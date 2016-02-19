@@ -21,7 +21,7 @@ public class CategoryVisualisation {
     static final int NUM_SITES = 40;
     static JTable table;
 
-    public static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("majestic_10000v2.csv"));
         String line;
         int c = 0;
