@@ -75,7 +75,7 @@ public class EntityVisualisation {
     }
 
     private static void parseFile() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("majestic_10000.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader("majestic_10000v2.csv"));
         String line;
         // Skip the first line with the field names
         reader.readLine();
