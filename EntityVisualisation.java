@@ -9,7 +9,7 @@ import java.util.HashMap;
  */
 public class EntityVisualisation {
 
-    public static final int NUM_SITES = 30, NUM_EACH_DOMAIN = 5;
+    public static final int NUM_SITES = 40, NUM_EACH_DOMAIN = 5;
     public static final float X_SIZE = 1080, Y_SIZE = 800;
     private static final long UPDATE_DELAY = 10;
     static ArrayList<SiteEntity> sites = new ArrayList<>(NUM_SITES);
